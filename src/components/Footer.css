@@ -3,7 +3,7 @@
 .footer {
   background-color: #222;
   color: #eee;
-  padding: 2rem 1rem 1rem 1rem;
+  padding: 1rem 0rem 1rem 1rem;
   font-family: Arial, sans-serif;
   margin-top: 3rem;
 }
@@ -25,7 +25,7 @@
 .footer-section h3,
 .footer-section h4 {
   margin-bottom: 1rem;
-  color: #ff4d4d; /* Accent color */
+  color: #69a9a4; /* Accent color */
 }
 
 .footer-section p, 
@@ -36,7 +36,7 @@
 
 .footer-section ul {
   list-style: none;
-  padding: 0;
+  /* padding-left: 15px; */
 }
 
 .footer-section ul li {

@@ -11,17 +11,19 @@
 .homepage-left {
   flex: 1;
   max-width: 600px;
+  /* background-image: url('../assets/road.png'); */
+
 }
 
 .homepage-left h1, .homepage-left h2 {
-  color: #333;
+  color: #64827c;
   margin-bottom: 0.5rem;
 }
 
 .homepage-left p {
   font-size: 1rem;
   line-height: 1.6;
-  color: #555;
+  color: #050505;
   margin: 1rem 0;
   text-align: left;
 }

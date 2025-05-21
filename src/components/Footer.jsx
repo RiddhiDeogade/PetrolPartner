@@ -6,7 +6,7 @@ const Footer = () => (
   <footer className="footer">
     <div className="footer-content">
       <div className="footer-section about">
-        <h3>Patrol Partner</h3>
+        <h3>Petrol Partner</h3>
         <p>
           Connecting drivers and riders to share rides easily and affordably.
           Join our community and start your journey today!
@@ -25,14 +25,14 @@ const Footer = () => (
 
       <div className="footer-section contact">
         <h4>Contact Us</h4>
-        <p>Email: support@patrolpartner.com</p>
+        <p>Email: support@petrolpartner.com</p>
         <p>Phone: +1 234 567 890</p>
-        <p>Address: 123 Main Street, City, Country</p>
+        <p>Address: 123 Main Street, Nagpur, India</p>
       </div>
     </div>
 
     <div className="footer-bottom">
-      &copy; {new Date().getFullYear()} Patrol Partner. All rights reserved.
+      &copy; {new Date().getFullYear()} Petrol Partner. All rights reserved.
     </div>
   </footer>
 );

@@ -9,13 +9,14 @@ const HomePage = () => {
     const navigate = useNavigate();
 
     return (
+        <>
         <div style={{ textAlign: 'center', padding: '2rem' }}>
             <div className="homepage-container">
                 <div className="homepage-left">
-                    <h1 className="animated-heading">Welcome to Patrol Partner</h1>
+                    <h1 className="animated-heading">Welcome to Petrol Partner</h1>
                      <HeadingSwitcher />
                     <p>
-                        Patrol Partner is a ride-sharing web application designed to connect vehicle owners and travel partners.
+                        Petrol Partner is a ride-sharing web application designed to connect vehicle owners and travel partners.
                         Passengers can view a filtered list of available drivers based on their
                         route or stops, making it easier to find convenient and affordable travel partners. The platform ensures a smooth and secure
                         connection between riders and drivers through a simple and user-friendly interface.
@@ -33,6 +34,7 @@ const HomePage = () => {
                             marginTop: '1rem'
                         }}
                     >
+                        
                         Get Started
                     </button>
                 </div>
@@ -41,8 +43,10 @@ const HomePage = () => {
                     <img src={pic1} alt="Ride Sharing Illustration" />
                 </div>
             </div>
-            <Footer />
         </div>
+        
+        <Footer />
+            </>
     );
 };
 
