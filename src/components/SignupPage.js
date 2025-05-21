@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './SignupPage.css'; // Import the CSS styles
 
 const SignupPage = () => {
   const [formData, setFormData] = useState({
     name: '', surname: '', contact: '', email: '', password: ''
   });
+
   const navigate = useNavigate();
 
   const handleChange = e =>
@@ -12,41 +14,38 @@ const SignupPage = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    // Send formData to backend
+    // Handle signup logic here (e.g., send formData to backend)
     navigate('/login');
   };
 
   return (
-    <div style={{ maxWidth: '400px', margin: '2rem auto', padding: '2rem', backgroundColor: 'white', borderRadius: '8px', boxShadow: '0 0 10px rgba(0,0,0,0.1)' }}>
-      <h2 style={{ textAlign: 'center', marginBottom: '1.5rem' }}>Signup</h2>
-      <form onSubmit={handleSubmit}>
+    <div className="signup-page-background">
+    <div className="signup-container">
+      <h2 className="signup-title">Create Your Account</h2>
+      <form onSubmit={handleSubmit} className="signup-form">
         <input
           name="name"
-          placeholder="Name"
+          placeholder="First Name"
           onChange={handleChange}
           required
-          style={inputStyle}
         />
         <input
           name="surname"
-          placeholder="Surname"
+          placeholder="Last Name"
           onChange={handleChange}
           required
-          style={inputStyle}
         />
         <input
           name="contact"
           placeholder="Contact Number"
           onChange={handleChange}
           required
-          style={inputStyle}
         />
         <input
           name="email"
           placeholder="Email"
           onChange={handleChange}
           required
-          style={inputStyle}
         />
         <input
           name="password"
@@ -54,31 +53,12 @@ const SignupPage = () => {
           placeholder="Password"
           onChange={handleChange}
           required
-          style={inputStyle}
         />
-        <button type="submit" style={buttonStyle}>Signup</button>
+        <button type="submit">Sign Up</button>
       </form>
+    </div>
     </div>
   );
 };
 
-const inputStyle = {
-  width: '100%',
-  padding: '10px',
-  margin: '10px 0',
-  border: '1px solid #ccc',
-  borderRadius: '4px'
-};
-
-const buttonStyle = {
-  width: '80%',
-  padding: '10px',
-  backgroundColor: '#333',
-  color: 'white',
-  border: 'none',
-  borderRadius: '5px',
-  cursor: 'pointer',
-  display: 'block',
-  margin: '1rem auto'
-};
 export default SignupPage;
