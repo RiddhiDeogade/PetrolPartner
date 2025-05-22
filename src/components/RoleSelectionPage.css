@@ -2,6 +2,8 @@
 .role-selection-container {
   min-height: 85.8vh;
   background: linear-gradient(135deg, #96acaa, #2c3e50);
+    background: url('../assets/image8.jpg') repeat;  
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,10 +11,10 @@
 }
 
 .role-card {
-  background-color: #333;
-  padding: 2rem 3rem;
+  background-color: #252525;
+  padding: 2rem 2rem;
   border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(229, 228, 228, 0.2);
   text-align: center;
   max-width: 400px;
   width: 100%;

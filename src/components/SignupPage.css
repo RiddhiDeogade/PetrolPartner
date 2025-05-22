@@ -1,7 +1,7 @@
 /* SignupPage.css */
 .signup-page-background {
  background: url('../assets/scooty1.jpg') no-repeat center center/cover;  
- min-height: 90.5vh;
+ min-height: 90.6vh;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -23,7 +23,7 @@ const Navbar = () => {
       </div>
       <div className="right">
         {!user ? (
-          <Link to="/signup">Get Started</Link>
+          <Link to="/login">Login</Link>
         ) : (
           <button onClick={handleLogout}>Logout</button>
         )}
