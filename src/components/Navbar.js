@@ -19,7 +19,7 @@ const Navbar = () => {
         <Link to="/">    <img src={logoImage} alt="Logo" style={{ height: '25px' }} /> </Link>
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
-        <Link to="/drivers">Passengers List</Link>
+        <Link to="/drivers">Drivers List</Link>
       </div>
       <div className="right">
         {!user ? (

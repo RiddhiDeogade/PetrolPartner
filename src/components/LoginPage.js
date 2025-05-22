@@ -18,7 +18,7 @@ const LoginPage = () => {
   return (
     <div className="login-page-background">
       <div className="login-container">
-        <h2 className="login-title">Login</h2>
+        <h2 className="login-title">Sign-in</h2>
         <form onSubmit={handleSubmit} className="login-form">
           <input
             type="email"

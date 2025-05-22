@@ -1,20 +1,23 @@
 /* LoginPage.css */
 .login-page-background {
-     background: url('../assets/road.png') no-repeat center center/cover;  
-    min-height: 80vh;
+      background: linear-gradient(to right, #323333,#8d8d79 );
+
+    min-height: 85.9vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 1rem;
+               background: url('../assets/road2.jpg') no-repeat center center/cover;  
+
 }
 
 .login-container {
-    background-color: #ffffff;
+    background-color: #333;
     /* background: linear-gradient(to right, #3f502c, #98af4c); */
-         background: url('../assets/img5.png') no-repeat center center/cover;  
+         /* background: url('../assets/img5.png') no-repeat center center/cover;   */
   padding: 2rem;
   border-radius: 10px;
-  /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 10px 25px rgba(17, 63, 52, 0.949);
   max-width: 360px;
   width: 100%;
   font-family: 'Segoe UI', sans-serif;
@@ -24,7 +27,7 @@
   text-align: center;
   margin-bottom: 1.5rem;
   font-size: 40px;
-  color: #000000;
+  color: #f9f5f5;
 }
 
 .login-form input {
@@ -32,8 +35,8 @@
   padding: 12px;
   margin: 10px 0;
   border: 1px solid #e5e1e1;
-    background: linear-gradient(to right, #232322,#5f5f5e );
-  color: white;
+    background-color: #edf0f3;
+  color: black;
   border-radius: 6px;
   font-size: 0.95rem;
   transition: border-color 0.3s ease;
@@ -50,9 +53,9 @@
   justify-content: center;
   align-items: center;
   padding: 12px;
-  background-color: #333;
+  background-color: #484848;
   color: white;
-  border: none;
+  /* border: 2px solid rgb(21, 2, 2); */
   border-radius: 6px;
   font-size: 1rem;
   margin-top: 1rem;
