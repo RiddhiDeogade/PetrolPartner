@@ -47,20 +47,22 @@ npm install
 Create a .env file in the project root with your Firebase credentials:
 
 env
-Copy
-Edit
-REACT_APP_FIREBASE_API_KEY=your_api_key_here
-REACT_APP_FIREBASE_AUTH_DOMAIN=your_auth_domain_here
-REACT_APP_FIREBASE_PROJECT_ID=your_project_id_here
-REACT_APP_FIREBASE_STORAGE_BUCKET=your_storage_bucket_here
-REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id_here
-REACT_APP_FIREBASE_APP_ID=your_app_id_here
-REACT_APP_FIREBASE_MEASUREMENT_ID=your_measurement_id_here
-Start the development server:
 
-bash
-Copy
-Edit
+REACT_APP_FIREBASE_API_KEY=your_api_key_here
+
+REACT_APP_FIREBASE_AUTH_DOMAIN=your_auth_domain_here
+
+REACT_APP_FIREBASE_PROJECT_ID=your_project_id_here
+
+REACT_APP_FIREBASE_STORAGE_BUCKET=your_storage_bucket_here
+
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id_here
+
+REACT_APP_FIREBASE_APP_ID=your_app_id_here
+
+REACT_APP_FIREBASE_MEASUREMENT_ID=your_measurement_id_here
+
+Start the development server:
 npm start
 The app will open at http://localhost:3000.
 
@@ -77,29 +79,17 @@ Deployment
 This project uses GitHub Pages for deployment.
 
 Build the app:
-
-bash
-Copy
-Edit
 npm run build
-Deploy to GitHub Pages:
 
-bash
-Copy
-Edit
+Deploy to GitHub Pages:
 npm run deploy
 The app will be available at:
 
-cpp
-Copy
-Edit
 https://RiddhiDeogade.github.io/PetrolPartner/
 Note: The app uses HashRouter to support GitHub Pages routing.
 
 Folder Structure
-bash
-Copy
-Edit
+
 PetrolPartner/
 ├── public/
 ├── src/
