@@ -39,7 +39,7 @@ PetrolPartner is a React-based web app for managing driver forms with authentica
    git clone https://github.com/RiddhiDeogade/PetrolPartner.git
    cd PetrolPartner
 Install dependencies:
-npm install
+- npm install
 
 Create a .env file in the project root with your Firebase credentials:
 
