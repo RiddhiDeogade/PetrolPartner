@@ -11,7 +11,7 @@ const HeadingSwitcher = () => {
       setIndex((prev) => (prev + 1) % texts.length);
     }, 3000); // Change every 3 seconds
     return () => clearInterval(interval);
-  }, []);
+  }, [texts.length]);
 
   return <h2 className="fade-text">{texts[index]}</h2>;
 };
