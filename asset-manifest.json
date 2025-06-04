@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/PetrolPartner/static/css/main.d796475f.css",
-    "main.js": "/PetrolPartner/static/js/main.6ddf6426.js",
+    "main.js": "/PetrolPartner/static/js/main.f972d868.js",
     "static/media/scooty1.jpg": "/PetrolPartner/static/media/scooty1.775f144ab407432edc5e.jpg",
     "static/media/scooty.jpg": "/PetrolPartner/static/media/scooty.4028323ad4c4e957377a.jpg",
     "static/media/image8.jpg": "/PetrolPartner/static/media/image8.8b9240f03c4fbb2447af.jpg",
     "static/media/img1.png": "/PetrolPartner/static/media/img1.f91bfeace7f51059400d.png",
     "index.html": "/PetrolPartner/index.html",
     "main.d796475f.css.map": "/PetrolPartner/static/css/main.d796475f.css.map",
-    "main.6ddf6426.js.map": "/PetrolPartner/static/js/main.6ddf6426.js.map"
+    "main.f972d868.js.map": "/PetrolPartner/static/js/main.f972d868.js.map"
   },
   "entrypoints": [
     "static/css/main.d796475f.css",
-    "static/js/main.6ddf6426.js"
+    "static/js/main.f972d868.js"
   ]
 }
