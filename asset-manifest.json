@@ -1,18 +1,17 @@
 {
   "files": {
-    "main.css": "/PetrolPartner/static/css/main.4d807894.css",
-    "main.js": "/PetrolPartner/static/js/main.f9bed425.js",
+    "main.css": "/PetrolPartner/static/css/main.d796475f.css",
+    "main.js": "/PetrolPartner/static/js/main.93b939db.js",
     "static/media/scooty1.jpg": "/PetrolPartner/static/media/scooty1.775f144ab407432edc5e.jpg",
     "static/media/scooty.jpg": "/PetrolPartner/static/media/scooty.4028323ad4c4e957377a.jpg",
-    "static/media/road2.jpg": "/PetrolPartner/static/media/road2.534c90de58ffb2f8ceeb.jpg",
     "static/media/image8.jpg": "/PetrolPartner/static/media/image8.8b9240f03c4fbb2447af.jpg",
     "static/media/img1.png": "/PetrolPartner/static/media/img1.f91bfeace7f51059400d.png",
     "index.html": "/PetrolPartner/index.html",
-    "main.4d807894.css.map": "/PetrolPartner/static/css/main.4d807894.css.map",
-    "main.f9bed425.js.map": "/PetrolPartner/static/js/main.f9bed425.js.map"
+    "main.d796475f.css.map": "/PetrolPartner/static/css/main.d796475f.css.map",
+    "main.93b939db.js.map": "/PetrolPartner/static/js/main.93b939db.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d807894.css",
-    "static/js/main.f9bed425.js"
+    "static/css/main.d796475f.css",
+    "static/js/main.93b939db.js"
   ]
 }
