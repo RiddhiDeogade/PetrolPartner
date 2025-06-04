@@ -93,6 +93,7 @@ Note: The app uses HashRouter to support GitHub Pages routing.
 
 Folder Structure
 
+
 PetrolPartner/
 ├── public/
 ├── src/
