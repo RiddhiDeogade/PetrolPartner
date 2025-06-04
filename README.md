@@ -1,70 +1,136 @@
-# Getting Started with Create React App
+# PetrolPartner
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+PetrolPartner is a React-based web app for managing driver forms with authentication via Google and Firebase integration. It features user signup, driver form submission, listing submitted drivers, and protected routes.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- User authentication with Google sign-in (Firebase Auth)
+- Submit and list driver details stored in Firebase Firestore
+- Protected routes based on authentication
+- Responsive UI with React Router and HashRouter for GitHub Pages compatibility
+- Deployment configured for GitHub Pages
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- React (v19)
+- Firebase (Auth, Firestore)
+- React Router DOM (v7)
+- GitHub Pages for deployment
+- Material UI and custom CSS styling
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js and npm installed
+- Firebase account with a project set up
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. Clone the repo:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   git clone https://github.com/RiddhiDeogade/PetrolPartner.git
+   cd PetrolPartner
+Install dependencies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+bash
+Copy
+Edit
+npm install
+Create a .env file in the project root with your Firebase credentials:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+env
+Copy
+Edit
+REACT_APP_FIREBASE_API_KEY=your_api_key_here
+REACT_APP_FIREBASE_AUTH_DOMAIN=your_auth_domain_here
+REACT_APP_FIREBASE_PROJECT_ID=your_project_id_here
+REACT_APP_FIREBASE_STORAGE_BUCKET=your_storage_bucket_here
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_messaging_sender_id_here
+REACT_APP_FIREBASE_APP_ID=your_app_id_here
+REACT_APP_FIREBASE_MEASUREMENT_ID=your_measurement_id_here
+Start the development server:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+bash
+Copy
+Edit
+npm start
+The app will open at http://localhost:3000.
 
-## Learn More
+Usage
+Navigate through the app using the navbar.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Sign up or log in using Google authentication.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Submit driver forms and view the list of submitted drivers.
 
-### Code Splitting
+Protected routes are accessible only after login.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Deployment
+This project uses GitHub Pages for deployment.
 
-### Analyzing the Bundle Size
+Build the app:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+bash
+Copy
+Edit
+npm run build
+Deploy to GitHub Pages:
 
-### Making a Progressive Web App
+bash
+Copy
+Edit
+npm run deploy
+The app will be available at:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+cpp
+Copy
+Edit
+https://RiddhiDeogade.github.io/PetrolPartner/
+Note: The app uses HashRouter to support GitHub Pages routing.
 
-### Advanced Configuration
+Folder Structure
+bash
+Copy
+Edit
+PetrolPartner/
+├── public/
+├── src/
+│   ├── components/         # React components (Navbar, HomePage, SignupPage, DriverFormPage, DriverListPage)
+│   ├── context/            # AuthContext for authentication state management
+│   ├── firebase.js         # Firebase configuration and initialization
+│   ├── App.jsx             # Main app routing and layout
+│   └── styles.css          # Global styles
+├── .env                   # Firebase environment variables (not committed)
+├── package.json
+├── README.md
+└── ...
+Environment Variables
+The .env file stores sensitive Firebase configuration keys. Make sure to:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Add .env to .gitignore to prevent pushing sensitive data.
 
-### Deployment
+Restart your dev server whenever you change .env.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Troubleshooting
+If Google Sign-In is not working, verify Firebase Console authorized domains include your deployment domain (e.g., localhost and yourgithubusername.github.io).
 
-### `npm run build` fails to minify
+Use HashRouter for routing on GitHub Pages to avoid 404 errors on refresh.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Restart dev server after .env changes.
+
+License
+This project is open source and available under the MIT License.
+
+Contact
+Developed by Riddhi Deogade.
+
+Feel free to open issues or submit pull requests!
+
