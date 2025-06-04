@@ -1,34 +1,76 @@
+// src/components/DriverList.jsx
 import React, { useEffect, useState } from 'react';
+import { collection, getDocs } from 'firebase/firestore';
+import { db } from '../firebase';
+import './DriverListPage.css'; // Optional CSS styling
 
-const DriverListPage = () => {
+const DriverList = () => {
   const [drivers, setDrivers] = useState([]);
-  const [filter, setFilter] = useState('');
+  const [searchQuery, setSearchQuery] = useState('');
+  const [filteredDrivers, setFilteredDrivers] = useState([]);
 
   useEffect(() => {
-    // Fetch drivers from backend
-    setDrivers([/* sample driver data for now */]);
+    const fetchAllDrivers = async () => {
+      try {
+        const snapshot = await getDocs(collection(db, 'drivers'));
+        const data = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+        setDrivers(data);
+        setFilteredDrivers(data);
+      } catch (error) {
+        console.error("Error fetching all drivers: ", error);
+      }
+    };
+
+    fetchAllDrivers();
   }, []);
 
-  const filteredDrivers = drivers.filter(driver =>
-    filter === '' || driver.stops.includes(filter)
-  );
+  useEffect(() => {
+    const query = searchQuery.toLowerCase();
+    const filtered = drivers.filter(driver =>
+      Object.values(driver).some(value =>
+        value?.toString().toLowerCase().includes(query)
+      )
+    );
+    setFilteredDrivers(filtered);
+  }, [searchQuery, drivers]);
 
   return (
-    <div>
-      <h2>Drivers List</h2>
+    <div className="driver-list-container">
+      <h2>Available Drivers</h2>
+      
       <input
         type="text"
-        placeholder="Filter by stop..."
-        value={filter}
-        onChange={e => setFilter(e.target.value)}
+        placeholder="Search..."
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+        className="search-input"
       />
-      <ul>
-        {filteredDrivers.map((d, i) => (
-          <li key={i}>{d.name} - {d.from} to {d.to}</li>
-        ))}
-      </ul>
+
+      {filteredDrivers.length === 0 ? (
+        <p>No matching driver data.</p>
+      ) : (
+        <ul className="driver-list">
+          {filteredDrivers.map((driver, index) => (
+            <li key={driver.id} className="driver-item">
+              <h3>Driver #{index + 1}</h3>
+              <p><strong>Name:</strong> {driver.firstName} {driver.lastName}</p>
+              <p><strong>Age:</strong> {driver.age}</p>
+              <p><strong>From:</strong> {driver.from}</p>
+              <p><strong>To:</strong> {driver.to}</p>
+              <p><strong>Vehicle:</strong> {driver.vehicle} ({driver.type})</p>
+              <p><strong>License:</strong> {driver.license}</p>
+              <p><strong>Budget:</strong> ₹{driver.budget}</p>
+              <p><strong>Phone:</strong> {driver.phone}</p>
+              <p><strong>Email:</strong> {driver.email}</p>
+              <p><strong>Stops:</strong> {driver.stops}</p>
+              <p><strong>Remarks:</strong> {driver.remarks}</p>
+              <p><strong>User ID:</strong> {driver.userId}</p>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 };
 
-export default DriverListPage;
+export default DriverList;

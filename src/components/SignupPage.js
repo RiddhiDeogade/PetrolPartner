@@ -1,62 +1,32 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './SignupPage.css'; // Import the CSS styles
+import { signInWithPopup } from 'firebase/auth';
+import { auth, provider } from '../firebase'; // Adjust path if needed
+import './SignupPage.css'; // You can customize styles
 
 const SignupPage = () => {
-  const [formData, setFormData] = useState({
-    name: '', surname: '', contact: '', email: '', password: ''
-  });
-
   const navigate = useNavigate();
 
-  const handleChange = e =>
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-
-  const handleSubmit = e => {
-    e.preventDefault();
-    // Handle signup logic here (e.g., send formData to backend)
-    navigate('/login');
+  const handleGoogleSignup = async () => {
+    try {
+      const result = await signInWithPopup(auth, provider);
+      const user = result.user;
+      console.log("Google User:", user);
+      // Optionally send user info to backend or Firestore here
+      navigate('/role-selection'); // Redirect after login
+    } catch (error) {
+      console.error("Google Sign-In Error:", error);
+    }
   };
 
   return (
     <div className="signup-page-background">
-    <div className="signup-container">
-      <h2 className="signup-title">Create Your Account</h2>
-      <form onSubmit={handleSubmit} className="signup-form">
-        <input
-          name="name"
-          placeholder="First Name"
-          onChange={handleChange}
-          required
-        />
-        <input
-          name="surname"
-          placeholder="Last Name"
-          onChange={handleChange}
-          required
-        />
-        <input
-          name="contact"
-          placeholder="Contact Number"
-          onChange={handleChange}
-          required
-        />
-        <input
-          name="email"
-          placeholder="Email"
-          onChange={handleChange}
-          required
-        />
-        <input
-          name="password"
-          type="password"
-          placeholder="Password"
-          onChange={handleChange}
-          required
-        />
-        <button type="submit">Sign Up</button>
-      </form>
-    </div>
+      <div className="signup-container">
+        <h2 className="signup-title">welcome!</h2>
+        <button className="google-signin-button" onClick={handleGoogleSignup}>
+          Sign in with Google
+        </button>
+      </div>
     </div>
   );
 };

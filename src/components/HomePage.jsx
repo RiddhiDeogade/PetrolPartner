@@ -21,20 +21,9 @@ const HomePage = () => {
                         route or stops, making it easier to find convenient and affordable travel partners. The platform ensures a smooth and secure
                         connection between riders and drivers through a simple and user-friendly interface.
                     </p>
-                    <button
+                    <button id='signupsubmit'
                         onClick={() => navigate('/signup')}
-                        style={{
-                            padding: '10px 20px',
-                            fontSize: '16px',
-                            backgroundColor: '#333',
-                            color: 'white',
-                            border: 'none',
-                            borderRadius: '5px',
-                            cursor: 'pointer',
-                            marginTop: '1rem'
-                        }}
                     >
-                        
                         Get Started
                     </button>
                 </div>

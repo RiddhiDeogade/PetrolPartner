@@ -1,4 +1,3 @@
-// components/Footer.jsx
 import React from 'react';
 import './Footer.css';
 
@@ -15,8 +14,8 @@ const Footer = () => (
 
       <div className="footer-section links">
         <h4>Quick Links</h4>
-        <ul>
-          <li><a href="/">Home</a></li>
+        <ul >
+          <li ><a href="/">Home</a></li>
           <li><a href="/signup">Sign Up</a></li>
           <li><a href="/login">Login</a></li>
           <li><a href="/drivers">Drivers</a></li>
