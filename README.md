@@ -76,24 +76,9 @@ https://RiddhiDeogade.github.io/PetrolPartner/
 Note: The app uses HashRouter to support GitHub Pages routing.
 ---
 
-## Folder Structure
 
 
-PetrolPartner/
-├── public/
-├── src/
-│   ├── components/         # React components (Navbar, HomePage, SignupPage, DriverFormPage, DriverListPage)
-│   ├── context/            # AuthContext for authentication state management
-│   ├── firebase.js         # Firebase configuration and initialization
-│   ├── App.jsx             # Main app routing and layout
-│   └── styles.css          # Global styles
-├── .env                   # Firebase environment variables (not committed)
-├── package.json
-├── README.md
-└── ...
-
-
-Environment Variables
+## Environment Variables
 The .env file stores sensitive Firebase configuration keys. Make sure to:
 
 Add .env to .gitignore to prevent pushing sensitive data.
@@ -101,7 +86,7 @@ Add .env to .gitignore to prevent pushing sensitive data.
 Restart your dev server whenever you change .env.
 
 
-Troubleshooting
+## Troubleshooting
 If Google Sign-In is not working, verify Firebase Console authorized domains include your deployment domain (e.g., localhost and yourgithubusername.github.io).
 
 Use HashRouter for routing on GitHub Pages to avoid 404 errors on refresh.
@@ -109,7 +94,7 @@ Use HashRouter for routing on GitHub Pages to avoid 404 errors on refresh.
 Restart dev server after .env changes.
 
 
-Contact
+## Contact
 Developed by Riddhi Deogade.
 
 Feel free to open issues or submit pull requests!
