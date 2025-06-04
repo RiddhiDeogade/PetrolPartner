@@ -72,8 +72,9 @@ Protected routes are accessible only after login.
       npm run deploy
 The app will be available at:
 
-https://RiddhiDeogade.github.io/PetrolPartner/
-Note: The app uses HashRouter to support GitHub Pages routing.
+   https://RiddhiDeogade.github.io/PetrolPartner/
+   Note: The app uses HashRouter to support GitHub Pages routing.
+   
 ---
 
 
