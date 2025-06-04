@@ -31,17 +31,18 @@ PetrolPartner is a React-based web app for managing driver forms with authentica
 - Node.js and npm installed
 - Firebase account with a project set up
 
-### Installation
+## Installation
 
 1. Clone the repo:
 
    ```bash
    git clone https://github.com/RiddhiDeogade/PetrolPartner.git
    cd PetrolPartner
-Install dependencies:
+2. Install dependencies:
+   
 - npm install
 
-Create a .env file in the project root with your Firebase credentials:
+-Create a .env file in the project root with your Firebase credentials:
 
 
 REACT_APP_FIREBASE_API_KEY=your_api_key_here
@@ -64,13 +65,15 @@ REACT_APP_FIREBASE_APP_ID=your_app_id_here
 
 REACT_APP_FIREBASE_MEASUREMENT_ID=your_measurement_id_here
 
----
 
-Start the development server:
-npm start
+3. Start the development server:
+    ```bash
+   npm start
 The app will open at http://localhost:3000.
 
-###Usage
+---
+
+## Usage
 Navigate through the app using the navbar.
 
 Sign up or log in using Google authentication.
@@ -79,21 +82,23 @@ Submit driver forms and view the list of submitted drivers.
 
 Protected routes are accessible only after login.
 
-###Deployment
-This project uses GitHub Pages for deployment.
+## Deployment
+-This project uses GitHub Pages for deployment.
 
-Build the app:
-npm run build
+### Build the app:
+      ```bash
+      npm run build
 
-Deploy to GitHub Pages:
-npm run deploy
+### Deploy to GitHub Pages:
+      ```bash
+      npm run deploy
 The app will be available at:
 
 https://RiddhiDeogade.github.io/PetrolPartner/
 Note: The app uses HashRouter to support GitHub Pages routing.
 ---
 
-###Folder Structure
+## Folder Structure
 
 
 PetrolPartner/
