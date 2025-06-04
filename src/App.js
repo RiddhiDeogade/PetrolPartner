@@ -14,24 +14,59 @@ function App() {
   return (
     <AuthProvider>
       <Router>
-        <Navbar />
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/signup" element={<SignupPage />} />
+          <Route
+            path="/"
+            element={
+              <>
+                <Navbar />
+                <HomePage />
+              </>
+            }
+          />
+          <Route
+            path="/signup"
+            element={
+              <>
+                <Navbar />
+                <SignupPage />
+              </>
+            }
+          />
           <Route
             path="/role-selection"
             element={
               <ProtectedRoute>
-                <RoleSelectionPage />
+                <>
+                  <Navbar />
+                  <RoleSelectionPage />
+                </>
               </ProtectedRoute>
             }
           />
-          <Route path="/driver-form" element={<DriverFormPage />} />
-          <Route path="/drivers" element={<DriverListPage />} />
+          <Route
+            path="/driver-form"
+            element={
+              <>
+                <Navbar />
+                <DriverFormPage />
+              </>
+            }
+          />
+          <Route
+            path="/drivers"
+            element={
+              <>
+                <Navbar />
+                <DriverListPage />
+              </>
+            }
+          />
         </Routes>
       </Router>
     </AuthProvider>
   );
 }
+
 
 export default App;
