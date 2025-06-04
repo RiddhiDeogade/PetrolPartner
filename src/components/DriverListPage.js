@@ -64,7 +64,7 @@ const DriverList = () => {
               <p><strong>Email:</strong> {driver.email}</p>
               <p><strong>Stops:</strong> {driver.stops}</p>
               <p><strong>Remarks:</strong> {driver.remarks}</p>
-              <p><strong>User ID:</strong> {driver.userId}</p>
+              
             </li>
           ))}
         </ul>
