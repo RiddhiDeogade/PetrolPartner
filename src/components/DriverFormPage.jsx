@@ -364,7 +364,7 @@ const DriverFormAndListPage = () => {
           style={{ marginBottom: '1rem', width: '100%', padding: '0.5rem' }}
         />
         {filteredDrivers.length === 0 && <p>No forms found.</p>}
-        <ul style={{ listStyle: 'none', padding: 0, maxHeight: '140vh', overflowY: 'auto' }}>
+        <ul style={{ listStyle: 'none', padding: 0, maxHeight: '100vh', overflowY: 'auto' }}>
           {filteredDrivers.map((driver, index) => (
             <li
               key={driver.id}
