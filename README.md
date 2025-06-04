@@ -64,12 +64,13 @@ REACT_APP_FIREBASE_APP_ID=your_app_id_here
 
 REACT_APP_FIREBASE_MEASUREMENT_ID=your_measurement_id_here
 
+---
 
 Start the development server:
 npm start
 The app will open at http://localhost:3000.
 
-Usage
+###Usage
 Navigate through the app using the navbar.
 
 Sign up or log in using Google authentication.
@@ -78,7 +79,7 @@ Submit driver forms and view the list of submitted drivers.
 
 Protected routes are accessible only after login.
 
-Deployment
+###Deployment
 This project uses GitHub Pages for deployment.
 
 Build the app:
@@ -90,8 +91,9 @@ The app will be available at:
 
 https://RiddhiDeogade.github.io/PetrolPartner/
 Note: The app uses HashRouter to support GitHub Pages routing.
+---
 
-Folder Structure
+###Folder Structure
 
 
 PetrolPartner/
@@ -106,12 +108,15 @@ PetrolPartner/
 ├── package.json
 ├── README.md
 └── ...
+
+
 Environment Variables
 The .env file stores sensitive Firebase configuration keys. Make sure to:
 
 Add .env to .gitignore to prevent pushing sensitive data.
 
 Restart your dev server whenever you change .env.
+
 
 Troubleshooting
 If Google Sign-In is not working, verify Firebase Console authorized domains include your deployment domain (e.g., localhost and yourgithubusername.github.io).
@@ -120,8 +125,6 @@ Use HashRouter for routing on GitHub Pages to avoid 404 errors on refresh.
 
 Restart dev server after .env changes.
 
-License
-This project is open source and available under the MIT License.
 
 Contact
 Developed by Riddhi Deogade.
