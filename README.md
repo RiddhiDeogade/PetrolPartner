@@ -31,40 +31,40 @@ PetrolPartner is a React-based web app for managing driver forms with authentica
 ## Installation
 
 1. Clone the repo:
-
-   ```bash
-   git clone https://github.com/RiddhiDeogade/PetrolPartner.git
-   cd PetrolPartner
-2. Install dependencies:
    
-- npm install
+         git clone https://github.com/RiddhiDeogade/PetrolPartner.git
+         cd PetrolPartner
+   
+3. Install dependencies:
+   
+       npm install
 
 Create a .env file in the project root with your Firebase credentials
 
 3. Start the development server:
-    ```bash
-   npm start
+   
+         npm start
 The app will open at http://localhost:3000.
 
 
 ## Usage
-Navigate through the app using the navbar.
+- Navigate through the app using the navbar.
 
-Sign up or log in using Google authentication.
+- Sign up or log in using Google authentication.
 
-Submit driver forms and view the list of submitted drivers.
+- Submit driver forms and view the list of submitted drivers.
 
-Protected routes are accessible only after login.
+- Protected routes are accessible only after login.
 
 ## Deployment
 This project uses GitHub Pages for deployment.
 
 ### Build the app:
-      ```bash
+      
       npm run build
 
 ### Deploy to GitHub Pages:
-      ```bash
+      
       npm run deploy
 The app will be available at:
 
@@ -76,17 +76,17 @@ The app will be available at:
 ## Environment Variables
 The .env file stores sensitive Firebase configuration keys. Make sure to:
 
-      Add .env to .gitignore to prevent pushing sensitive data.
+   Add .env to .gitignore to prevent pushing sensitive data.
 
-      Restart your dev server whenever you change .env.
+   Restart your dev server whenever you change .env.
 
 
 ## Troubleshooting
-If Google Sign-In is not working, verify Firebase Console authorized domains include your deployment domain (e.g., localhost and yourgithubusername.github.io).
+- If Google Sign-In is not working, verify Firebase Console authorized domains include your deployment domain (e.g., localhost and yourgithubusername.github.io).
 
-Use HashRouter for routing on GitHub Pages to avoid 404 errors on refresh.
+- Use HashRouter for routing on GitHub Pages to avoid 404 errors on refresh.
 
-Restart dev server after .env changes.
+- Restart dev server after .env changes.
 
 
 ## Contact
