@@ -2,7 +2,7 @@
 
 PetrolPartner is a React-based web app for managing driver forms with authentication via Google and Firebase integration. It features user signup, driver form submission, listing submitted drivers, and protected routes.
 
----
+
 
 ## Features
 
@@ -12,7 +12,7 @@ PetrolPartner is a React-based web app for managing driver forms with authentica
 - Responsive UI with React Router and HashRouter for GitHub Pages compatibility
 - Deployment configured for GitHub Pages
 
----
+
 
 ## Technologies Used
 
@@ -22,7 +22,7 @@ PetrolPartner is a React-based web app for managing driver forms with authentica
 - GitHub Pages for deployment
 - Material UI and custom CSS styling
 
----
+-
 
 ## Getting Started
 
@@ -49,7 +49,6 @@ Create a .env file in the project root with your Firebase credentials
    npm start
 The app will open at http://localhost:3000.
 
----
 
 ## Usage
 Navigate through the app using the navbar.
@@ -75,8 +74,6 @@ The app will be available at:
    https://RiddhiDeogade.github.io/PetrolPartner/
    Note: The app uses HashRouter to support GitHub Pages routing.
    
----
-
 
 
 ## Environment Variables
