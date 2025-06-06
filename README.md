@@ -12,8 +12,6 @@ PetrolPartner is a React-based web app for managing driver forms with authentica
 - Responsive UI with React Router and HashRouter for GitHub Pages compatibility
 - Deployment configured for GitHub Pages
 
-
-
 ## Technologies Used
 
 - React (v19)
@@ -22,7 +20,6 @@ PetrolPartner is a React-based web app for managing driver forms with authentica
 - GitHub Pages for deployment
 - Material UI and custom CSS styling
 
--
 
 ## Getting Started
 
