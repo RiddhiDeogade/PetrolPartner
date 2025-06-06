@@ -60,7 +60,7 @@ Submit driver forms and view the list of submitted drivers.
 Protected routes are accessible only after login.
 
 ## Deployment
--This project uses GitHub Pages for deployment.
+This project uses GitHub Pages for deployment.
 
 ### Build the app:
       ```bash
