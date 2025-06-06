@@ -76,9 +76,9 @@ The app will be available at:
 ## Environment Variables
 The .env file stores sensitive Firebase configuration keys. Make sure to:
 
-Add .env to .gitignore to prevent pushing sensitive data.
+      Add .env to .gitignore to prevent pushing sensitive data.
 
-Restart your dev server whenever you change .env.
+      Restart your dev server whenever you change .env.
 
 
 ## Troubleshooting
